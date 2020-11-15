@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEAN - instagram Vinyl Record Design</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/description.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../js/fancybox-master/dist/jquery.fancybox.css">
+<script type="text/javascript" src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+<style type="text/css">
+	body {
+		background-color: cornflowerblue;
+	}
+	.video {
+		width: 20%;
+		margin: 3vw auto 0 auto;
+	}
+	video {
+		width: 100%;
+	}
+	p {
+		text-align: center;
+	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		margin: 3vw auto 3vw auto;
+	}
+	.column {
+		flex: 50%;
+		max-width: 50%;
+		text-align: center;
+	}
+	img {
+		width: 80%;
+	}
+	.text {
+		line-height: 2em;
+	}
+</style>
+<body>
+
+	<div class="back">
+		<a href="../works.html"><div class="arrow-right"></div>BACK</a>
+	</div>
+
+	<h1>DEAN - instagram VINYL RECORD DESIGN</h1>
+	<p>Press <strong><i>PLAY</i></strong> before viewing. *volume*</p>
+
+	<div class="video">
+		<video id="instagram">
+			<source src="../media/deaninstagram.mp4" type="video/mp4">
+		</video>
+		<button id="button"><strong><i>PLAY</i></strong></button>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<a href="../imgs/instagramvinyl_2.jpg" data-fancybox="gallery">
+				<img src="../imgs/instagramvinyl_2.jpg">
+			</a>
+			<p>FRONT</p>
+		</div>
+		<div class="column">
+			<a href="../imgs/instagramvinyl_2b.jpg" data-fancybox="gallery">
+				<img src="../imgs/instagramvinyl_2b.jpg">
+			</a>
+			<p>BACK</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="column">
+			<a href="../imgs/instagramsleeves.png" data-fancybox="gallery">
+				<img src="../imgs/instagramsleeves.png">
+			</a>
+		</div>
+		<div class="column text">
+			DEAN is one of my favorite musical artists and has been ever since he debuted.<br>
+			He released <i>instagram</i> in Dec 2017. And I loved it.<br>
+			The song's narrative is quite sad.<br>
+			It talks about how looking through Instagram,<br>
+			<i>seeing what others are doing or what they are accomplishing<br>
+			makes us feel much more small and alone.<br>
+			How we live in a world where information is everything,<br>
+			but knowing more is only getting more fearful.</i>
+			<p>
+				But I believe it recognizes the reality that traps a lot of us.<br>
+				<i>that trapped me.</i><br>
+			</p>
+			<p>
+				I wanted to design a vinyl record for the song, since I also love vinyl records,<br>
+				but I added a sleeve for the record itself with lyrics from the song,<br>
+				and the positive message I believe DEAN wanted us to think about.<br>
+				Each side of the sleeve shows the same content, but in Korean and English.<br>
+				I loved the song because it helped me free myself after I recognized the message<br>
+				and I hope it can do the same for others.
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var myVideo = document.querySelector('#instagram');
+
+		document.querySelector('#button').onclick = function(){
+			Play();
+		}
+
+		function Play() {
+			myVideo.play();
+		}
+	</script>
+
+</body>
+</html>

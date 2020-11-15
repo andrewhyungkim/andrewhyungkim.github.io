@@ -1,0 +1,256 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lavender;
+	background-opacity: .9;
+}
+
+.container {
+	margin-left: 4.8vw;
+}
+
+figure {
+	width: 10vw;
+	height: 10vw;
+	margin: 2vw 4vw;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+section {
+	text-align: center;
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+}
+
+#concept {
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-family: "Helvetica", sans-serif;
+	font-weight: bold;
+}
+
+	#concept:hover {
+		transform: scale(1.3);
+	}
+
+#one {
+	background-image: url(../abstracts-edited/c1.jpg);
+}
+
+#two {
+	background-image: url(../abstracts-edited/c2.jpg);
+}
+
+#three {
+	background-image: url(../abstracts-edited/c3.jpg);
+}
+
+#four {
+	background-image: url(../abstracts-edited/c4.jpg);
+}
+
+#five {
+	background-image: url(../abstracts-edited/c5.jpg);
+}
+
+#six {
+	background-image: url(../abstracts-edited/c6.jpg);
+}
+
+#seven {
+	background-image: url(../abstracts-edited/c7.jpg);
+}
+
+#eight {
+	background-image: url(../abstracts-edited/c8.jpg);
+}
+
+#nine {
+	background-image: url(../abstracts-edited/c9.jpg);
+}
+
+#ten {
+	background-image: url(../abstracts-edited/c10.jpg);
+}
+
+#aone {
+	background-image: url(../abstracts-edited/c11.jpg);
+}
+
+#atwo {
+	background-image: url(../abstracts-edited/c12.jpg);
+}
+
+#athree {
+	background-image: url(../abstracts-edited/c13.jpg);
+}
+
+#afour {
+	background-image: url(../abstracts-edited/c14.jpg);
+}
+
+#afive {
+	background-image: url(../abstracts-edited/c15.jpg);
+}
+
+#asix {
+	background-image: url(../abstracts-edited/c16.jpg);
+}
+
+#aseven {
+	background-image: url(../abstracts-edited/c17.jpg);
+}
+
+#aeight {
+	background-image: url(../abstracts-edited/c18.jpg);
+}
+
+#anine {
+	background-image: url(../abstracts-edited/c19.jpg);
+}
+
+#aten {
+	background-image: url(../abstracts-edited/c20.jpg);
+}
+
+#bone {
+	background-image: url(../abstracts-edited/c21.jpg);
+}
+
+#btwo {
+	background-image: url(../abstracts-edited/c22.jpg);
+}
+
+#bthree {
+	background-image: url(../abstracts-edited/c23.jpg);
+}
+
+#bfour {
+	background-image: url(../abstracts-edited/c24.jpg);
+}
+
+#bfive {
+	background-image: url(../abstracts-edited/c25.jpg);
+}
+
+#bsix {
+	background-image: url(../abstracts-edited/c26.jpg);
+}
+
+#bseven {
+	background-image: url(../abstracts-edited/c27.jpg);
+}
+
+#beight {
+	background-image: url(../abstracts-edited/c28.jpg);
+}
+
+#bnine {
+	background-image: url(../abstracts-edited/c29.jpg);
+}
+
+#bten {
+	background-image: url(../abstracts-edited/c30.jpg);
+}
+
+#cone {
+	background-image: url(../abstracts-edited/c31.jpg);
+}
+
+#ctwo {
+	background-image: url(../abstracts-edited/c32.jpg);
+}
+
+#cthree {
+	background-image: url(../abstracts-edited/c33.jpg);
+}
+
+#cfour {
+	background-image: url(../abstracts-edited/c34.jpg);
+}
+
+#cfive {
+	background-image: url(../abstracts-edited/c35.jpg);
+}
+
+#csix {
+	background-image: url(../abstracts-edited/c36.jpg);
+}
+
+#cseven {
+	background-image: url(../abstracts-edited/c37.jpg);
+}
+
+#ceight {
+	background-image: url(../abstracts-edited/c38.jpg);
+}
+
+#cnine {
+	background-image: url(../abstracts-edited/c39.jpg);
+}
+
+#cten {
+	background-image: url(../abstracts-edited/c40.jpg);
+}
+
+#done {
+	background-image: url(../abstracts-edited/c41.jpg);
+}
+
+#dtwo {
+	background-image: url(../abstracts-edited/c42.jpg);
+}
+
+#dthree {
+	background-image: url(../abstracts-edited/c43.jpg);
+}
+
+#dfour {
+	background-image: url(../abstracts-edited/c44.jpg);
+}
+
+#dfive {
+	background-image: url(../abstracts-edited/c45.jpg);
+}
+
+#dsix {
+	background-image: url(../abstracts-edited/c46.jpg);
+}
+
+#dseven {
+	background-image: url(../abstracts-edited/c47.jpg);
+}
+
+#deight {
+	background-image: url(../abstracts-edited/c48.jpg);
+}
+
+#dnine {
+	background-image: url(../abstracts-edited/c49.jpg);
+}
+
+#dten {
+	background-image: url(../abstracts-edited/whereitallgoes.jpg);
+}
+
+figure:hover {
+		transform: scale(1.05,1.05);
+			-moz-transform: scale(1.05,1.05);
+			-ms-transform: scale(1.05,1.05);
+			-o-transform: scale(1.05,1.05);
+			-webkit-transform: scale(1.05,1.05);
+		box-shadow: 10px 10px 20px 0px black;
+			-moz-box-shadow: 10px 10px 20px 0px black;
+			-webkit-box-shadow: 10px 10px 20px 0px black;
+	}
+

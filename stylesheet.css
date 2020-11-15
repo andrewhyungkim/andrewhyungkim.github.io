@@ -1,0 +1,38 @@
+body {
+	font-family: Helvetica, sans-serif;
+	background-color: black;
+}
+nav {
+	margin-top: 4vh;
+	text-align: center;
+}
+#container-nav {
+	width: 100%;
+}
+.navbar {
+	margin: 0 50px 0 50px;
+	font-size: 1.3em;
+	text-decoration: none;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+	transition: border-bottom .5s;
+	color: white;
+}
+.navbar:hover {
+	border-bottom: 1px solid white;
+}
+#logo-nav {
+	width: 1.5vw;
+}
+h1 {
+	color: white;
+	animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+		0% {
+			transform: rotateY(0deg);
+		}
+		100% {
+			transform: rotateY(360deg);
+		}
+	}

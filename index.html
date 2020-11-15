@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Andrew Kim</title>
+</head>
+<style type="text/css">
+	body {
+		font-family: Helvetica, sans-serif;
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+	nav {
+		margin-top: 6vh;
+		text-align: center;
+	}
+	.navbar {
+		margin: 0 50px 0 50px;
+		font-size: 1.3em;
+		text-decoration: none;
+		padding-bottom: 5px;
+		border-bottom: 1px solid black;
+		transition: border-bottom .5s;
+		color: white;
+	}
+	.navbar:hover {
+		border-bottom: 1px solid white;
+	}
+	img {
+		width: 12vw;
+		animation: rotate 4s linear infinite;
+	}
+	@keyframes rotate {
+		0% {
+			transform: rotateY(0deg);
+		}
+		100% {
+			transform: rotateY(360deg);
+		}
+	}
+	h4 {
+		margin-top: 5vh;
+		line-height: 2em;
+	}
+	#container {
+		margin-top: 15vh;
+	}
+</style>
+<body>
+
+	<div id="container-nav">
+		<nav>
+			<a class="navbar" href="about.html">about</a>
+			<a class="navbar" href="works.html">works</a>
+			<a class="navbar" href="#">kim tokki</a>
+		</nav>
+	</div>
+
+	<div id="container">
+		<img src="logo.png">
+		<h4>ANDREW KIM<br>김형식</h4>
+	</div>
+
+</body>
+</html>
