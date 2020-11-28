@@ -8,6 +8,32 @@
 <style type="text/css">
 	#statement {
 		text-align: right;
+		padding-right: 6vw;
+		padding-top: 6vh;
+		color: white; 
+	}
+	#statement h1 {
+		text-align: right;
+		line-height: 1em;
+	}
+	#statement p {
+		line-height: 1.5em;
+	}
+	img {
+		width: 30%;
+	}
+	#container {
+		width: 80%;
+		display: flex;
+		margin: 6vh auto 0 auto;
+	}
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+	.column img {
+		width: 70%;
+		padding: 3vh 2vw 3vh 2vw;
 	}
 </style>
 <body>
@@ -16,18 +42,37 @@
 		<nav>
 			<a class="navbar" href="index.html">home</a>
 			<a class="navbar" href="works.html">works</a>
-			<a class="navbar" href="#">kim tokki</a>
+			<a class="navbar hidden" href="#">hyun9</a>
 		</nav>
 	</div>
 
 	<div id="container">
-		<div id="profile">
-			<img src="">
+		<div id="profile" class="column">
+			<img src="about_img.jpg">
 		</div>
-		<div id="statement">
-			<h1><i>ANDREW KIM</i></h1>
-			<h1><i>김형식</i></h1>
-			<p>My name is Andrew Kim, and I am a graphic designer.</p>
+		<div class="column">
+			<div id="statement">
+				<h1><i>ANDREW KIM</i></h1>
+				<h1><i>김형식</i></h1>
+				<br>
+				<p>Born in Seoul, South Korea.<br>
+				Name is Andrew Kim.<br>
+				Senior at the University of Southern California.<br>
+				Majoring in Design and minoring in Web Technologies.</p>
+				<br>
+				<p>Starting at a small private studio in LA,<br>
+				I have been learning design for almost 7 years now.</p>
+				<p>Although I've stepped into various types of design,<br>
+				I have discovered a passion for positive design.</p>
+				<p>I'm interested in the power that design, as a voice, holds.<br>
+				I wonder about what it can do for its audience, for everyone,<br>
+				even if it's just for a single moment.<br>
+				I want to know how my design can make someone feel.</p>
+				<p>In my freetime,<br>
+				Enjoy watching Anime, K-Drama<br>
+				Playing computer games<br>
+				Listening to R&B, Indie music.</p>
+			</div>
 		</div>
 	</div>
 

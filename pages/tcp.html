@@ -2,39 +2,51 @@
 <html>
 <head>
 	<title>TCP Costume Design</title>
+	<link rel="stylesheet" type="text/css" href="../css/description.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/fancybox-master/dist/jquery.fancybox.css">
+	<script type="text/javascript" src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+	<style type="text/css">
+		body {
+			background-color: mintcream;
+			opacity: .9;
+		}
+		h1 {
+			margin-bottom: 5vh;
+		}
+		.text {
+			width: 40%;
+			text-align: center;
+			margin: 0 auto;
+			line-height: 1.3em;
+		}
+		#layout {
+			width: 40%;
+			margin: 5vh auto 5vh auto;
+		}
+		#art {
+			width: 40%;
+			margin: 5vh auto 5vh auto;
+		}
+		#video {
+			margin: 5vh auto 5vh auto;
+			text-align: center;
+		}
+		img {
+			width: 100%;
+		}
+		p {
+			margin-top: 4vh;
+		}
+		.stargazer {
+			width: 100%;
+		}
+		iframe {
+			margin: auto;
+			border: 2px solid black;
+		}
+	</style>
 </head>
-<link rel="stylesheet" type="text/css" href="../css/description.css">
-<style type="text/css">
-	body {
-		background-color: mintcream;
-		opacity: .9;
-	}
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 3vw auto 3vw auto;
-		width: 85%;
-	}
-	.column {
-		flex: 50%;
-		max-width: 50%;
-		text-align: center; 
-	}
-	img {
-		width: 100%;
-	}
-	p {
-		margin-top: 3vw;
-	}
-	.stargazer {
-		width: 100%;
-	}
-	iframe {
-		width: 75%;
-		margin: auto;
-		border: 2px solid black;
-	}
-</style>
 <body>
 
 	<div class="back">
@@ -43,16 +55,40 @@
 
 	<h1>TCP DANCE TEAM: COSTUME DESIGN</h1>
 
-	<div class="row">
-		<div class="column">
-			<img src="../imgs/costumelayout.png">
-		</div>
-		<div class="column">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/B7JTQVO9XD0?" allow="encrypted-media" allowfullscreen></iframe>
-			<p>The owners restricted embedding. Click <a href="https://www.youtube.com/watch?v=B7JTQVO9XD0" target="_blank">THIS </a>to watch the set on Youtube.</p>
-		</div>
-		<img class="stargazer" src="../imgs/stargazer.jpg">
+	<div class="text">
+		<p>A good friend of mine has a strong passion for dance.</p>
+		<p>He created his own dance team, The Corner Project<br>
+		and asked me to create a shirt design for their first performance.</p>
 	</div>
+
+	<div id="art">
+		<a href="../imgs/stargazer.jpg" data-fancybox="gallery">
+			<img class="stargazer" src="../imgs/stargazer.jpg">
+		</a>
+	</div>
+
+	<div class="text">
+		<p>Their concept was individualism and exploration.<br>
+		They called it STARGAZER.</p>
+		<p>I loved the idea. So I designed a title logo and an image<br>
+		that best suited their concept</p>
+	</div>
+
+	<div id="layout">
+		<a href="../imgs/costumelayout.jpg" data-fancybox="gallery">
+			<img src="../imgs/costumelayout.jpg">
+		</a>
+	</div>
+
+	<div class="text">
+		<p>They competed in USC's Best Dance Team and received 1st Place.</p>
+	</div>
+
+	<div id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/B7JTQVO9XD0?" allow="encrypted-media" allowfullscreen></iframe>
+		<p>The owners restricted embedding. Click <a href="https://www.youtube.com/watch?v=B7JTQVO9XD0" target="_blank">THIS </a>to watch the performance on Youtube.</p>
+	</div>
+
 
 </body>
 </html>

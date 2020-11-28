@@ -3,11 +3,8 @@ body {
 	background-color: black;
 }
 nav {
-	margin-top: 4vh;
+	margin-top: 6vh;
 	text-align: center;
-}
-#container-nav {
-	width: 100%;
 }
 .navbar {
 	margin: 0 50px 0 50px;
@@ -21,18 +18,11 @@ nav {
 .navbar:hover {
 	border-bottom: 1px solid white;
 }
-#logo-nav {
-	width: 1.5vw;
-}
 h1 {
 	color: white;
-	animation: rotate 4s linear infinite;
+	text-align: center;
 }
-@keyframes rotate {
-		0% {
-			transform: rotateY(0deg);
-		}
-		100% {
-			transform: rotateY(360deg);
-		}
-	}
+
+.hidden {
+	display: none;
+}

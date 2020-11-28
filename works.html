@@ -1,181 +1,191 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="js/fancybox-master/dist/jquery.fancybox.css">
-<script type="text/javascript" src="js/fancybox-master/dist/jquery.fancybox.js"></script>
 <head>
 	<title>Works</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/fancybox-master/dist/jquery.fancybox.css">
+	<script type="text/javascript" src="js/fancybox-master/dist/jquery.fancybox.js"></script>
+	<style type="text/css">
+		h1 {
+			font-style: italic;
+			font-size: 1.5em;
+			margin-top: 6vh;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 4vh auto 4vh auto;
+			width: 85%;
+		}
+		.column {
+			flex: 25%;
+			max-width: 25%;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		a {
+			color: black;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 100%;
+			opacity: .9;
+			transition: .5s ease;
+			overflow: hidden;
+		}
+		.overlay-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 0;
+			height: 100%;
+			opacity: .9;
+			transition: .5s ease;
+			overflow: hidden;
+		}
+		.overlay-top {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 0;
+			opacity: .9;
+			transition: .5s ease;
+			overflow: hidden;
+		}
+		.overlay-bottom {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 0;
+			opacity: .9;
+			transition: .5s ease;
+			overflow: hidden;
+		}
+		.main {
+			vertical-align: middle;
+			width: 100%;
+			height: auto;
+		}
+		.container:hover .overlay-width {
+			width: 100%;
+		}
+		.container:hover .overlay-height {
+			height: 100%;
+		}
+		.text {
+			position: absolute;
+			font-size: 1.3em;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+	 		-ms-transform: translate(-50%, -50%);
+	  		transform: translate(-50%, -50%);
+	  		white-space: nowrap;
+	  		visibility: hidden;
+	  		text-align: center;
+	  		line-height: 1.5em;
+		}
+		.container:hover .text {
+			visibility: visible;
+		}
+
+		.black {
+			background-color: black;
+		}
+		.darkmagenta {
+			background-color: darkmagenta;
+		}
+		.cornflower {
+			background-color: cornflowerblue;
+		}
+		.darkred {
+			background-color: darkred;
+		}
+		.darkslateblue {
+			background-color: darkslateblue;
+		}
+		.indigo {
+			background-color: indigo;
+		}
+		.mintcream {
+			background-color: mintcream;
+		}
+		.orange {
+			background-color: orange;
+		}
+		.navy {
+			background-color: navy;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+		.mistyrose {
+			background-color: mistyrose;
+		}
+		.lightgray {
+			background-color: lightgray;
+		}
+		.rebeccapurple {
+			background-color: rebeccapurple;
+		}
+		.dimgrey {
+			background-color: dimgrey;
+		}
+		.aliceblue {
+			background-color: aliceblue
+		}
+		.teal {
+			background-color: teal;
+		}
+		.pink {
+			background-color: pink;
+		}
+		.mediumspringgreen {
+			background-color: mediumspringgreen;
+		}
+
+		.white-text {
+			color: white;
+		}
+
+		@media screen and (max-width: 800px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+	</style>
 </head>
-<style type="text/css">
-	h1 {
-		font-variant: small-caps;
-		margin-top: 3vw;
-		text-align: center;
-	}
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 3vw auto 3vw auto;
-		width: 85%;
-	}
-	.column {
-		flex: 25%;
-		max-width: 25%;
-	}
-	.container {
-		position: relative;
-		width: 100%;
-	}
-	a {
-		color: black;
-	}
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 0;
-		height: 100%;
-		opacity: .9;
-		transition: .5s ease;
-		overflow: hidden;
-	}
-	.overlay-right {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		width: 0;
-		height: 100%;
-		opacity: .9;
-		transition: .5s ease;
-		overflow: hidden;
-	}
-	.overlay-top {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 0;
-		opacity: .9;
-		transition: .5s ease;
-		overflow: hidden;
-	}
-	.overlay-bottom {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 0;
-		opacity: .9;
-		transition: .5s ease;
-		overflow: hidden;
-	}
-	.main {
-		vertical-align: middle;
-		width: 100%;
-		height: auto;
-	}
-	.container:hover .overlay-width {
-		width: 100%;
-	}
-	.container:hover .overlay-height {
-		height: 100%;
-	}
-	.text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
- 		-ms-transform: translate(-50%, -50%);
-  		transform: translate(-50%, -50%);
-  		white-space: nowrap;
-  		visibility: hidden;
-  		text-align: center;
-  		line-height: 1.5em;
-	}
-	.container:hover .text {
-		visibility: visible;
-	}
-
-	.black {
-		background-color: black;
-	}
-	.darkmagenta {
-		background-color: darkmagenta;
-	}
-	.cornflower {
-		background-color: cornflowerblue;
-	}
-	.darkred {
-		background-color: darkred;
-	}
-	.darkslateblue {
-		background-color: darkslateblue;
-	}
-	.indigo {
-		background-color: indigo;
-	}
-	.mintcream {
-		background-color: mintcream;
-	}
-	.firebrick {
-		background-color: firebrick;
-	}
-	.navy {
-		background-color: navy;
-	}
-	.yellow {
-		background-color: yellow;
-	}
-	.mistyrose {
-		background-color: mistyrose;
-	}
-	.lightgray {
-		background-color: lightgray;
-	}
-	.lavender {
-		background-color: lavender;
-	}
-	.dimgrey {
-		background-color: dimgrey;
-	}
-	.aliceblue {
-		background-color: aliceblue
-	}
-
-	.white-text {
-		color: white;
-	}
-
-	@media screen and (max-width: 800px) {
-		.column {
-			flex: 50%;
-			max-width: 50%;
-		}
-	}
-	@media screen and (max-width: 600px) {
-		.column {
-			flex: 100%;
-			max-width: 100%;
-		}
-	}
-</style>
 <body>
 
-	<div id="container-nav">
+	<div id="nav">
 		<nav>
 			<a class="navbar" href="about.html">about</a>
 			<a class="navbar" href="index.html">home</a>
-			<a class="navbar" href="#">kim tokki</a>
+			<a class="navbar hidden" href="#">hyun9</a>
 		</nav>
 	</div>
 
-	<h1>works</h1>
+	<h1>HOVER AND CLICK</h1>
 
 	<div class="row">
 		<div class="column">
@@ -188,34 +198,26 @@
 				</a>
 			</div>
 			<div class="container">
-				<img class="main" src="imgs/aaliyahfinal.jpg">
-				<a href="imgs/aaliyahfinal.jpg" data-fancybox="gallery">
-					<div class="overlay-right overlay-width darkmagenta">
-						<div class="text white-text"><strong>AALIYAH</strong><br><i>DIGITAL ILLUSTRATION</i></div>
+				<img class="main" src="imgs/instagramvinyl.jpg">
+				<a href="pages/instagram.html">
+					<div class="overlay-bottom overlay-height cornflower">
+						<div class="text white-text"><strong>DEAN - instagram</strong><br><i>VINYL RECORD DESIGN</i></div>
 					</div>
 				</a>
 			</div>
 			<div class="container">
 				<img class="main" src="imgs/kasalogo.png">
 				<a href="imgs/kasalogo.png" data-fancybox="gallery">
-					<div class="overlay-top overlay-height black">
-						<div class="text white-text"><strong>USC KASA</strong><br><i>LOGO DESIGN</i></div>
+					<div class="overlay-top overlay-height orange">
+						<div class="text"><strong>USC KASA</strong><br><i>LOGO DESIGN</i></div>
 					</div>
 				</a>
 			</div>
 			<div class="container">
-				<img class="main" src="imgs/sticker-rinnegan.jpg">
-				<a href="imgs/sticker-rinnegan.jpg" data-fancybox="gallery">
-					<div class="overlay-bottom overlay-height indigo">
-						<div class="text white-text"><strong>ANIME CHARACTER: PAIN</strong><br><i>STICKER DESIGN</i></div>
-					</div>
-				</a>
-			</div>
-			<div class="container">
-				<img class="main" src="imgs/qrdoggo.jpg">
-				<a href="pages/supergraphic.html">
-					<div class="overlay-bottom overlay-height aliceblue">
-						<div class="text"><strong>SUPERGRAPHIC</strong><br><i>QR CODE RIVER</i></div>
+				<img class="main" src="imgs/kasa2018pcfront.jpg">
+				<a href="pages/kasapostcard.html">
+					<div class="overlay-right overlay-width teal">
+						<div class="text white-text"><strong>USC KASA</strong><br><i>POSTCARD DESIGN</i></div>
 					</div>
 				</a>
 			</div>
@@ -223,21 +225,24 @@
 
 		<div class="column">
 			<div class="container">
-				<img class="main" src="imgs/kasa2018pcfront.jpg">
-				<a href="pages/kasapostcard.html">
-					<div class="overlay-right overlay-width firebrick">
-						<div class="text white-text"><strong>USC KASA</strong><br><i>POSTCARD DESIGN</i></div>
+				<img class="main" src="imgs/qrdoggo.jpg">
+				<a href="pages/supergraphic.html">
+					<div class="overlay-bottom overlay-height pink">
+						<div class="text"><strong>SUPERGRAPHIC</strong><br><i>QR CODE RIVER</i></div>
 					</div>
 				</a>
 			</div>
 			<div class="container">
-				<img class="main" src="imgs/instagramvinyl_2.jpg">
-				<a href="pages/instagram.html">
-					<div class="overlay overlay-width cornflower">
-						<div class="text"><strong>DEAN - instagram</strong><br><i>VINYL RECORD DESIGN</i></div>
+				<img class="main" src="imgs/nextsteps_6.jpg">
+				<a href="pages/nextsteps.html">
+					<div class="overlay-right overlay-width dimgrey">
+						<div class="text white-text"><strong>USC: INSTITUTIONAL CRITIQUE</strong><br><i>NEXT STEPS POSTER DESIGN</i></div>
 					</div>
 				</a>
 			</div>
+		</div>
+
+		<div class="column">
 			<div class="container">
 				<img class="main" src="imgs/thegreatbattle.jpg">
 				<a href="pages/thegreatbattle.html">
@@ -247,29 +252,10 @@
 				</a>
 			</div>
 			<div class="container">
-				<img class="main" src="imgs/retrocandy.jpg">
-				<a href="pages/ataristix.html">
-					<div class="overlay-top overlay-height yellow">
-						<div class="text"><strong>ATARI STIX</strong><br><i>RETRO ARCADE X LOLLIPOP DESIGN</i></div>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		<div class="column">
-			<div class="container">
 				<img class="main" src="imgs/cassells.jpg">
 				<a href="pages/cassells.html">
-					<div class="overlay-top overlay-height darkred">
+					<div class="overlay-right overlay-width darkred">
 						<div class="text white-text"><strong>CASSELL'S HAMBURGERS</strong><br><i>MENU DESIGN</i></div>
-					</div>
-				</a>
-			</div>
-			<div class="container">
-				<img class="main" src="imgs/jobtalk.jpg">
-				<a href="imgs/jobtalk.jpg" data-fancybox="gallery">
-					<div class="overlay-bottom overlay-height mistyrose">
-						<div class="text"><strong>USC KBSO</strong><br><i>PROFESSIONAL PANEL EVENT POSTER DESIGN</i></div>
 					</div>
 				</a>
 			</div>
@@ -281,38 +267,22 @@
 					</div>
 				</a>
 			</div>
-			<div class="container">
-				<img class="main" src="imgs/graffiti.jpg">
-				<a href="pages/graffiti.html">
-					<div class="overlay-right overlay-width lightgray">
-						<div class="text"><strong>HISTORY OF GRAFFITI IN THE L.A. RIVER</strong><br><i>BOOKLET DESIGN</i></div>
-					</div>
-				</a>
-			</div>
 		</div>
 
 		<div class="column">
 			<div class="container">
-				<img class="main" src="imgs/ubatuba.png">
-				<a href="imgs/ubatuba.png" data-fancybox="gallery">
-					<div class="overlay-bottom overlay-height darkslateblue">
-						<div class="text white-text"><strong>UBATUBA AÇAÍ</strong><br><i>LOGO DESIGN</i></div>
+				<img class="main" src="imgs/anitale_cover.jpg">
+				<a href="pages/anitale.html">
+					<div class="overlay-top overlay-height mediumspringgreen">
+						<div class="text"><strong>ANITALE</strong><br><i>MAGAZINE DESIGN</i></div>
 					</div>
 				</a>
 			</div>
 			<div class="container">
-				<img class="main" src="imgs/whereitallgoes.jpg">
-				<a href="pages/project2.html">
-					<div class="overlay-top overlay-height lavender">
-						<div class="text"><strong>WHERE IT ALL GOES</strong><br><i>PHOTO GALLERY WEB DESIGN</i></div>
-					</div>
-				</a>
-			</div>
-			<div class="container">
-				<img class="main" src="imgs/nextsteps_6.jpg">
-				<a href="pages/nextsteps.html">
-					<div class="overlay-right overlay-width dimgrey">
-						<div class="text white-text"><strong>USC: INSTITUTIONAL CRITIQUE</strong><br><i>NEXT STEPS POSTER DESIGN</i></div>
+				<img class="main" src="imgs/all3.jpg">
+				<a href="pages/technicality.html">
+					<div class="overlay-right overlay-width rebeccapurple">
+						<div class="text white-text"><strong>TECHNICALITY</strong><br><i>PHOTOSHOP ART</i></div>
 					</div>
 				</a>
 			</div>

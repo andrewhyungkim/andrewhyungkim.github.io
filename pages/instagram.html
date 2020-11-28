@@ -2,52 +2,82 @@
 <html>
 <head>
 	<title>DEAN - instagram Vinyl Record Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/description.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/fancybox-master/dist/jquery.fancybox.css">
+	<script type="text/javascript" src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
+	<style type="text/css">
+		body {
+			background-color: cornflowerblue;
+			color: white;
+		}
+		.video {
+			width: 20%;
+			margin: 3vw auto 0 auto;
+		}
+		video {
+			width: 100%;
+		}
+		.press-play {
+			text-align: center;
+		}
+		.text {
+			width: 40%;
+			text-align: center;
+			margin: 5vh auto 5vh auto;
+			line-height: 1.3em;
+		}
+		.last {
+			line-height: 2em;
+			text-align: center;
+			margin: 7vh auto 5vh auto;
+		}
+		.last a:hover {
+			color: black;
+		}
+		.text-right {
+			text-align: left;
+			margin-top: 8vh;
+			line-height: 1.3em;
+		}
+		.text-left {
+			text-align: right;
+			margin-top: 8vh;
+			margin-right: 2.5vw;
+			line-height: 1.3em;
+		}
+		.row {
+			width: 50%;
+			margin: 0 auto;
+			display: flex;
+		}
+		.column {
+			flex: 50%;
+			width: 50%;
+		}
+		.column img {
+			width: 90%;
+		}
+		.sleeves {
+			text-align: center;
+		}
+		.sleeves img {
+			width: 40%;
+		}
+		.vinyl {
+			margin-bottom: 5vh;
+		}
+	</style>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../css/description.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../js/fancybox-master/dist/jquery.fancybox.css">
-<script type="text/javascript" src="../js/fancybox-master/dist/jquery.fancybox.js"></script>
-<style type="text/css">
-	body {
-		background-color: cornflowerblue;
-	}
-	.video {
-		width: 20%;
-		margin: 3vw auto 0 auto;
-	}
-	video {
-		width: 100%;
-	}
-	p {
-		text-align: center;
-	}
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		width: 80%;
-		margin: 3vw auto 3vw auto;
-	}
-	.column {
-		flex: 50%;
-		max-width: 50%;
-		text-align: center;
-	}
-	img {
-		width: 80%;
-	}
-	.text {
-		line-height: 2em;
-	}
-</style>
 <body>
 
 	<div class="back">
-		<a href="../works.html"><div class="arrow-right"></div>BACK</a>
+		<a href="../works.html" class="white"><div class="arrow-right arrow-white"></div>BACK</a>
 	</div>
 
 	<h1>DEAN - instagram VINYL RECORD DESIGN</h1>
-	<p>Press <strong><i>PLAY</i></strong> before viewing. *volume*</p>
+	<p class="press-play">Press <strong><i>PLAY</i></strong> before viewing. *volume on / not too high*</p>
 
 	<div class="video">
 		<video id="instagram">
@@ -56,49 +86,84 @@
 		<button id="button"><strong><i>PLAY</i></strong></button>
 	</div>
 
+	<div class="text">
+		<p>DEAN is one of my favorite musical artists.<br>
+		He has been ever since he debuted in 2016.</p>
+		<p>DEAN released his song <i>instagram</i> in December of 2017.</p>
+	</div>
+
 	<div class="row">
 		<div class="column">
-			<a href="../imgs/instagramvinyl_2.jpg" data-fancybox="gallery">
-				<img src="../imgs/instagramvinyl_2.jpg">
+			<a href="../imgs/instagramfront.jpg" data-fancybox="gallery">
+				<img src="../imgs/instagramfront.jpg">
 			</a>
-			<p>FRONT</p>
 		</div>
 		<div class="column">
-			<a href="../imgs/instagramvinyl_2b.jpg" data-fancybox="gallery">
-				<img src="../imgs/instagramvinyl_2b.jpg">
-			</a>
-			<p>BACK</p>
+			<div class="text-right">
+				<p><strong><i>FRONT SIDE</i></strong></p>
+				<br>
+				<p>The song's narrative is quite sad.</p>
+				<p>It talks about how looking through Instagram,<br>
+				seeing what others are doing or what they are accomplishing<br>
+				makes us feel much more small and alone.</p>
+			</div>
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="column">
-			<a href="../imgs/instagramsleeves.png" data-fancybox="gallery">
-				<img src="../imgs/instagramsleeves.png">
+			<div class="text-left">
+				<p><strong><i>BACK SIDE</i></strong></p>
+				<br>
+				<p>How we live in a world where information is everything,<br>
+				but knowing more is makes us more fearful.</p>
+				<p>But I believe the song recognizes the reality<br>
+				that trapped a lot of people,<br>
+				like me.</p>
+			</div>
+		</div>
+		<div class="column">
+			<a href="../imgs/instagramback.jpg" data-fancybox="gallery">
+				<img src="../imgs/instagramback.jpg">
 			</a>
 		</div>
-		<div class="column text">
-			DEAN is one of my favorite musical artists and has been ever since he debuted.<br>
-			He released <i>instagram</i> in Dec 2017. And I loved it.<br>
-			The song's narrative is quite sad.<br>
-			It talks about how looking through Instagram,<br>
-			<i>seeing what others are doing or what they are accomplishing<br>
-			makes us feel much more small and alone.<br>
-			How we live in a world where information is everything,<br>
-			but knowing more is only getting more fearful.</i>
-			<p>
-				But I believe it recognizes the reality that traps a lot of us.<br>
-				<i>that trapped me.</i><br>
-			</p>
-			<p>
-				I wanted to design a vinyl record for the song, since I also love vinyl records,<br>
-				but I added a sleeve for the record itself with lyrics from the song,<br>
-				and the positive message I believe DEAN wanted us to think about.<br>
-				Each side of the sleeve shows the same content, but in Korean and English.<br>
-				I loved the song because it helped me free myself after I recognized the message<br>
-				and I hope it can do the same for others.
-			</p>
-		</div>
 	</div>
+
+	<div class="text">
+		<p>A friend told me that when there is someone<br>
+		that feels the same pain, loneliness as you do,<br>
+		you don't feel so alone anymore.</p>
+		<p>I think that's why the song was so meaningful for me.</p>
+		<p>And I hope it does the same for many others.</p>
+	</div>
+
+	<div class="sleeves">
+		<a href="../imgs/instagramsleeves.png" data-fancybox="gallery">
+			<img src="../imgs/instagramsleeves.png">
+		</a>
+	</div>
+
+	<div class="text">
+		<p>I decided to design a vinyl record for the song,<br>
+		one that I felt best represented the emotions conveyed through it.</p>
+		<p>But I also designed a sleeve for the record,<br>
+		with lyrics of the song in Korean on one side and English on the other.</p>
+		<p>And I wrote a message in the middle;</p>
+		<p>A message I felt <i>instagram</i> was really trying to communicate.</p>
+	</div>
+
+	<div class="sleeves vinyl">
+		<a href="../imgs/instagramvinyl.jpg" data-fancybox="gallery">
+			<img src="../imgs/instagramvinyl.jpg">
+		</a>
+	</div>
+
+	<div class="last">
+		<p>If you liked the song,<br>
+		check out more of his songs <a href="https://www.youtube.com/channel/UCnCEKlzi52Yzj2JdBFhKVEA" class="white">HERE</a>.</p>
+	</div>
+
+	
 
 	<script type="text/javascript">
 		var myVideo = document.querySelector('#instagram');
